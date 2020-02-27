@@ -8,47 +8,15 @@
         <div class="dropdown">
         <a href="#" class="w3-left w3-button w3-white dropbtn">MY ART</a>
           <div class="dropdown-content">
-          <a href="#">Portrait</a>
-          <a href="#">Scenery</a>
+            <router-link to="/hello"><a href="#">Portrait</a></router-link>
+          <router-link to="/scenery"><a href="#">Scenery</a></router-link>
           <a href="#">Streetsnap</a>
           </div>
         </div>
         <a href="#about" class="w3-right w3-button w3-white">About</a>
       </header>
 
-      <!-- Photo Grid -->
-      <div class="w3-row">
-        <div class="w3-third">
-          <img src="/assets/about1.jpg" style="width:100%" class="Photos">
-          <img src="/assets/mainPage.jpg" style="width:100%" class="Photos">
-          <img src="/assets/mountainView.jpg" style="width:100%" class="Photos">
-        </div>
-        <div class="w3-third">
-          <img src="/assets/sf1.jpg" style="width:100%" class="Photos">
-          <img src="/assets/sf2.jpg" style="width:100%" class="Photos">
-          <img src="/assets/bw5.jpg" style="width:100%" class="Photos">
-        </div>
-        <div class="w3-third">
-          <img src="/assets/bw1.jpg" style="width:100%" class="Photos">
-          <img src="/assets/bw4.jpg" style="width:100%" class="Photos">
-          <img src="/assets/bw3.jpg" style="width:100%" class="Photos">
-        </div>
-      </div>
-
-      <div class="w3-row">
-        <div class="w3-third">
-          <img src="/assets/bw6.jpg" style="width:100%" class="Photos">
-        </div>
-        <div class="w3-third">
-          <img src="/assets/bw7.jpg" style="width:100%" class="Photos">
-        </div>
-        <div class="w3-third">
-          <img src="/assets/bw8.jpg" style="width:100%" class="Photos">
-        </div>
-      </div>
-
-      <HelloWorld />
-
+      <router-view></router-view>
       <!-- End Page Content -->
     </div>
 
@@ -86,15 +54,10 @@
 </template>
 
 <script>
-  import HelloWorld from './components/HelloWorld';
   import { mdiCopyright } from '@mdi/js';
 
   export default {
     name: 'App',
-
-    components: {
-      HelloWorld,
-    },
 
     data() {
       return {
