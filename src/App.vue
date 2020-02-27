@@ -12,35 +12,35 @@
       <!-- Photo Grid -->
       <div class="w3-row">
         <div class="w3-third">
-          <img src="/assets/about1.jpg" style="width:100%">
-          <img src="/assets/mainPage.jpg" style="width:100%">
-          <img src="/assets/mountainView.jpg" style="width:100%">
+          <img src="/assets/about1.jpg" style="width:100%" class="Photos">
+          <img src="/assets/mainPage.jpg" style="width:100%" class="Photos">
+          <img src="/assets/mountainView.jpg" style="width:100%" class="Photos">
         </div>
         <div class="w3-third">
-          <img src="/assets/sf1.jpg" style="width:100%">
-          <img src="/assets/sf2.jpg" style="width:100%">
-          <img src="/assets/bw5.jpg" style="width:100%">
-        </div>       
+          <img src="/assets/sf1.jpg" style="width:100%" class="Photos">
+          <img src="/assets/sf2.jpg" style="width:100%" class="Photos">
+          <img src="/assets/bw5.jpg" style="width:100%" class="Photos">
+        </div>
         <div class="w3-third">
-          <img src="/assets/bw1.jpg" style="width:100%">
-          <img src="/assets/bw4.jpg" style="width:100%">
-          <img src="/assets/bw3.jpg" style="width:100%">
+          <img src="/assets/bw1.jpg" style="width:100%" class="Photos">
+          <img src="/assets/bw4.jpg" style="width:100%" class="Photos">
+          <img src="/assets/bw3.jpg" style="width:100%" class="Photos">
         </div>
       </div>
-    
-        <div class="w3-row">
-          <div class="w3-third">
-          <img src="/assets/bw6.jpg" style="width:100%">
-          </div>
-          <div class="w3-third">
-          <img src="/assets/bw7.jpg" style="width:100%">
-          </div>
-          <div class="w3-third">
-            <img src="/assets/bw8.jpg" style="width:100%">
-          </div>
-        </div>     
-      
-      <HelloWorld/>
+
+      <div class="w3-row">
+        <div class="w3-third">
+          <img src="/assets/bw6.jpg" style="width:100%" class="Photos">
+        </div>
+        <div class="w3-third">
+          <img src="/assets/bw7.jpg" style="width:100%" class="Photos">
+        </div>
+        <div class="w3-third">
+          <img src="/assets/bw8.jpg" style="width:100%" class="Photos">
+        </div>
+      </div>
+
+      <HelloWorld />
 
       <!-- End Page Content -->
     </div>
@@ -68,19 +68,19 @@
       </form>
       <br>
       <v-footer>
-      <v-card-text class="w3-dark-grey py-2 white--text text-center">
-        <v-icon>{{copyRight}}</v-icon>
-        {{ new Date().getFullYear() }} —
-        <strong>Alexander Pan</strong>
-      </v-card-text>
-    </v-footer>
+        <v-card-text class="w3-dark-grey py-2 white--text text-center">
+          <v-icon>{{copyRight}}</v-icon>
+          {{ new Date().getFullYear() }} —
+          <strong>Alexander Pan</strong>
+        </v-card-text>
+      </v-footer>
     </footer>
   </v-app>
 </template>
 
 <script>
   import HelloWorld from './components/HelloWorld';
-  import { mdiCopyright} from '@mdi/js';
+  import { mdiCopyright } from '@mdi/js';
 
   export default {
     name: 'App',
@@ -103,5 +103,19 @@
 
   .w3-row img {
     margin-bottom: -8px
+  }
+
+  .Photos>{
+    z-index: 1;
+  }
+
+  .Photos:hover{
+    transition: all 500ms ease-in;
+    filter: grayscale(1);
+    opacity: 0.5;
+  }
+
+  .Photos {
+    overflow: hidden;
   }
 </style>
