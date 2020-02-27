@@ -8,9 +8,9 @@
         <div class="dropdown">
         <a href="#" class="w3-left w3-button w3-white dropbtn">MY ART</a>
           <div class="dropdown-content">
-            <router-link to="/hello"><a href="#">Portrait</a></router-link>
-          <router-link to="/scenery"><a href="#">Scenery</a></router-link>
-          <a href="#">Streetsnap</a>
+            <router-link to="/portrait">Portrait</router-link>
+          <router-link to="/scenery">Scenery</router-link>
+          <router-link to="/streetsnap">Streetsnap</router-link>
           </div>
         </div>
         <a href="#about" class="w3-right w3-button w3-white">About</a>
