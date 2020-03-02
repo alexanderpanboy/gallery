@@ -30,6 +30,18 @@
             <img src="/assets/bw8.jpg" style="width:100%" class="Photos">
           </div>
         </div>  
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+            </div>
+        
+          </div>
+        </div>
         </div>
 
 </template>
@@ -40,5 +52,6 @@
     data: () => ({
      
     }),
+    
   }
 </script>

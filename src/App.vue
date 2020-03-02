@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app style="background-color: darkslategrey;">
     <!-- !PAGE CONTENT! -->
     <div class="w3-content" style="max-width:1500px; background-color:darkslategrey;">
 
@@ -75,9 +75,6 @@
     margin-bottom: -8px
   }
 
-  .Photos> {
-    z-index: 1;
-  }
 
   .Photos:hover {
     transition: all 500ms ease-in;
@@ -87,6 +84,8 @@
 
   .Photos {
     overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
   }
 
   .dropbtn {
@@ -101,7 +100,7 @@
 
   .dropdown-content {
     display: none;
-    margin-top: 55px;
+    margin-top: 50px;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
